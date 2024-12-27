@@ -15,7 +15,7 @@ const AdminDashboard = () => {
                 <h3>Date</h3>
                 <input type="date" />
                 <h3>Assign to</h3>
-                <input type="text" placeholder='Employee Name' />
+                <input type="text" placeholder='Employee`s Name' />
                 <h3>Category</h3>
                 <input type="text" placeholder='design,dev, etc' />
 

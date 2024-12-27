@@ -44,7 +44,7 @@ const Login = () => {
             }}
             required className='mt-4 outline-none bg-transparent placeholder:text-gray-400 border-2 border-emerald-600 py-3 px-5 rounded-full text-xl'
             type="password"
-            placeholder='Enter Password' />
+            placeholder='Password' />
           
           
           <button 
