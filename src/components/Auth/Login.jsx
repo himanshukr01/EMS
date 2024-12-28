@@ -48,7 +48,7 @@ const Login = () => {
           
           
           <button 
-          className='text-white mt-5 outline-none placeholder:text-white border-none border-2 bg-emerald-600 py-3 px-5 rounded-full text-xl'>Log in</button>
+          className='text-white mt-5 w-full outline-none placeholder:text-white border-none border-2 bg-emerald-600 py-3 px-5 rounded-full text-xl'>Log in</button>
         
         
         </form>

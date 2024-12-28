@@ -11,5 +11,10 @@ body{
 }
 
 #tasklist::-webkit-scrollbar{
-  display: none;
+  background-color: transparent;
+  height: 5px;
+}
+
+div{
+  color: white;
 }
