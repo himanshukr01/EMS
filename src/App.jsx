@@ -5,6 +5,7 @@ import AdminDashboard from './components/Dashboard/AdminDashboard'
 import { getLocalStorage, setLocalStorage } from './utils/localStorage'
 import { useEffect, useState } from'react'
 import AuthContext from './context/AuthContext'
+import TaskContext from './context/TaskContext'
 import { useContext } from'react'
 
 const App = () => {
