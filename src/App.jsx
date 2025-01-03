@@ -4,7 +4,7 @@ import EmployeeDashboard from './components/Dashboard/EmployeeDashboard'
 import AdminDashboard from './components/Dashboard/AdminDashboard'
 import { getLocalStorage, setLocalStorage } from './utils/localStorage'
 import { useEffect, useState } from'react'
-import AuthContext from './context/AuthContext'
+import { AuthContext } from './context/AuthProvider'
 import TaskContext from './context/TaskContext'
 import { useContext } from'react'
 
