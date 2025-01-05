@@ -1,7 +1,10 @@
+localStorage.clear()
+
 const employees = [
     {
         id: 1,
-        email: "employee1@example.com",
+        firstName: "Aarav",
+        email: "e@e.com",
         password: "123",
         tasks: [
             {
@@ -34,10 +37,17 @@ const employees = [
                 taskDate: "2024-12-25",
                 category: "Client Work"
             }
-        ]
+        ],
+        taskCounts: {
+            active: 1,
+            newTask: 1,
+            completed: 1,
+            failed: 1
+        }
     },
     {
         id: 2,
+        firstName: "Vivaan",
         email: "employee2@example.com",
         password: "123",
         tasks: [
@@ -61,10 +71,17 @@ const employees = [
                 taskDate: "2024-12-26",
                 category: "System Maintenance"
             }
-        ]
+        ],
+        taskCounts: {
+            active: 1,
+            newTask: 1,
+            completed: 1,
+            failed: 0
+        }
     },
     {
         id: 3,
+        firstName: "Ananya",
         email: "employee3@example.com",
         password: "123",
         tasks: [
@@ -98,10 +115,17 @@ const employees = [
                 taskDate: "2024-12-24",
                 category: "Debugging"
             }
-        ]
+        ],
+        taskCounts: {
+            active: 1,
+            newTask: 1,
+            completed: 1,
+            failed: 1
+        }
     },
     {
         id: 4,
+        firstName: "Diya",
         email: "employee4@example.com",
         password: "123",
         tasks: [
@@ -125,46 +149,16 @@ const employees = [
                 taskDate: "2024-12-26",
                 category: "Training"
             }
-        ]
-    },
-    {
-        id: 5,
-        email: "employee5@example.com",
-        password: "123",
-        tasks: [
-            {
-                active: true,
-                newTask: true,
-                completed: false,
-                failed: false,
-                taskTitle: "Market Analysis",
-                taskDescription: "Analyze the quarterly market trends.",
-                taskDate: "2024-12-31",
-                category: "Research"
-            },
-            {
-                active: false,
-                newTask: false,
-                completed: true,
-                failed: false,
-                taskTitle: "Stakeholder Meeting",
-                taskDescription: "Discuss project updates with stakeholders.",
-                taskDate: "2024-12-26",
-                category: "Meeting"
-            },
-            {
-                active: false,
-                newTask: false,
-                completed: false,
-                failed: true,
-                taskTitle: "Data Migration",
-                taskDescription: "Migrate data from the old system.",
-                taskDate: "2024-12-24",
-                category: "Data Management"
-            }
-        ]
+        ],
+        taskCounts: {
+            active: 1,
+            newTask: 1,
+            completed: 1,
+            failed: 0
+        }
     }
 ];
+
 
 const admin = [
     {
