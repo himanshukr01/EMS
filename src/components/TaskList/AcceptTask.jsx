@@ -11,8 +11,8 @@ const AcceptTask = () => {
         Make a YouTube Video
     </h2>
     <p className='text-sm mt-2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sunt repellat saepe aliquid placeat necessitatibus.</p>
-    <div userName='felx justify-between mt-4'>
-        <button className='bg-green-500 py-1 px-2 text-sm'>Mark as Completed</button>
+    <div className='flex justify-between mt-4'>
+        <button className='bg-green-500 py-1 px-2 text-sm '>Mark as Completed</button>
         <button className='bg-red-500 py-1 px-2 text-sm'>Mark as Failed</button>
     </div>
 
