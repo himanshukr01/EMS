@@ -12,7 +12,7 @@ const NewTask = () => {
                 </h2>
                 <p className='text-sm mt-2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sunt repellat saepe aliquid placeat necessitatibus.</p>
                 <div className='mt-4'>
-                    <button className='bg-red-500'>New Task</button>
+                    <button className='bg-red-500'>Accept Task</button>
                 </div>
 
             </div>
