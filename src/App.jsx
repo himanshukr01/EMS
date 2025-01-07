@@ -18,8 +18,7 @@ const App = () => {
     const loggedInUser = localStorage.getItem('loggedInUser')
     if(loggedInUser){
         const userData = JSON.parse(loggedInUser)
-        setUser(userData.role)
-        setLoggedInUserData(userData.data)
+        console.log(userData)
     }
   })
     
