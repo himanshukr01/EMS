@@ -3,7 +3,7 @@ import React from 'react'
 const CreateTask = () => {
   return (
     <div>
-       <form className='flex items-center justify-between w-full bg-[#1c1c1c]  rounded-xl mt-9'>
+       <form className='flex items-center justify-between w-full bg-[#1c1c1c] rounded-xl mt-9'>
         <div className='p-5 '>
           
           <div className='p-2'>
@@ -32,7 +32,7 @@ const CreateTask = () => {
 
           <div>
             <h3>Description</h3>
-            <textarea name="" id="" cols='80' rows='10' className='rounded-md bg-black' ></textarea>
+            <textarea name="" id="" cols='80' rows='10' className='rounded-md bg-black border-2' ></textarea>
           </div>
 
           <div>
