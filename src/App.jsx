@@ -21,7 +21,7 @@ const App = () => {
         setUser(userData.role)
         setLoggedInUserData(userData.data)
     }
-  })
+  }, [])
     
 
 

@@ -2,6 +2,11 @@ import React from 'react'
 
 const Header = ({data}) => {
 
+  // const [username, setUsername] = useState('')
+
+  // if(!data){setUserName('Admin')}
+  // else{data.firstName}
+
   const logOutUser = () => {
     localStorage.removeItem('ems')
     window.location.href = '/'
