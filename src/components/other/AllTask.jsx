@@ -8,7 +8,7 @@ const AllTask = () => {
     return (
         <div className='bg-[#1c1c1c] p-5 rouded mt-5  '>
 
-            <div className='bg-red-400 py-2 mb-2 px-4 flex justify-between rounded'>
+            <div className='bg-emerald-400 py-2 mb-2 px-4 flex justify-between rounded'>
                 <h2 className='text-lg font-medium w-1/5 '>Employee Name</h2>
                 <h3 className='text-lg font-medium w-1/5 '>New Task</h3>
                 <h5 className='text-lg font-medium w-1/5 '>Active Task</h5>
@@ -18,8 +18,8 @@ const AllTask = () => {
             </div>
 
             <div className='overflow-auto'>
-            {authData.employees.map(function (elem) {
-                return <div className='border-2 border-emerald-400 py-2 mb-2 px-4 flex justify-between rounded '>
+            {authData.employees.map(function (elem, idx) {
+                return <div key={idx} className='border-2 border-emerald-400 py-2 mb-2 px-4 flex justify-between rounded '>
                     <h2 className='text-lg font-medium w-1/5 text-white-600'>{elem.firstName}</h2>
                     <h3 className='text-lg font-medium w-1/5 text-red-800'>{elem.taskCounts.active}</h3>
                     <h5 className='text-lg font-medium w-1/5 text-green-800'>{elem.taskCounts.active}</h5>
@@ -28,31 +28,6 @@ const AllTask = () => {
                 </div>
             })}
             </div>
-
-
-            {/* <div className='bg-green-400 py-2 mb-2 px-4 flex justify-between rounded'>
-            <h2>Himanshu</h2>
-            <h3>Make a UI Design</h3>
-            <h5>Status</h5>
-        </div>
-
-        <div className='bg-yellow-400 py-2 mb-2 px-4 flex justify-between rounded'>
-            <h2>Himanshu</h2>
-            <h3>Make a UI Design</h3>
-            <h5>Status</h5>
-        </div>
-
-        <div className='bg-purple-400 py-2 mb-2 px-4 flex justify-between rounded'>
-            <h2>Himanshu</h2>
-            <h3>Make a UI Design</h3>
-            <h5>Status</h5>
-        </div>
-
-        <div className='bg-red-400 py-2 mb-2 px-4 flex justify-between rounded'>
-            <h2>Himanshu</h2>
-            <h3>Make a UI Design</h3>
-            <h5>Status</h5>
-        </div> */}
         </div>
     )
 }

@@ -1,29 +1,76 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const CreateTask = () => {
+
+  const [taskTitle, setTaskTitle] = useState('')
+  const [taskDescription, setTaskDescription] = useState('')
+  const [taskDate, setTaskDate] = useState('')
+  const [asignTo, setAsignTo] = useState('')
+  const [category, setCategory] = useState('')
+
+  const [task, setTask] = useState({})
+
+  const submitHandler = (e) => {
+    e.preventDefault()
+    setTask({taskTitle, taskDescription, taskDate, category, asignTo,active:false, newTask:true, failed:true, completed:false})
+    console.log(task);
+  }
+
   return (
     <div>
-       <form className='flex items-center justify-between w-full bg-[#1c1c1c] rounded-xl mt-9  '>
+      <form onSubmit={(e) => {
+        submitHandler(e)
+      }}
+        className='flex items-center justify-between w-full bg-[#1c1c1c] rounded-xl mt-9  '>
         <div className='p-5 '>
-          
+
           <div className='p-2'>
-          <h3>Task Title</h3>
-          <input type="text" placeholder='Make a UI Design' className='rounded-md w-[575px] bg-black border-2 w-[45vw]' />
+            <h3>Task Title</h3>
+            <input 
+            value={taskTitle}
+            onChange={(e)=>{
+              setTaskTitle(e.target.value);
+            }}
+            type="text" 
+            placeholder='Make a UI Design' 
+            className='rounded-md w-[575px] bg-black border-2 w-[45vw]' />
           </div>
 
           <div className='p-2'>
             <h3>Date</h3>
-            <input type="date" name="" id="" className='rounded-md w-[575px] bg-black border-2 w-[45vw]' />
+            <input 
+            value={taskDate}
+            onChange={(e)=>{
+              setTaskDate(e.target.value);
+            }}
+            type="date" 
+            name="" 
+            id="" 
+            className='rounded-md w-[575px] bg-black border-2 w-[45vw]' />
           </div>
 
           <div className='p-2'>
             <h3>Assign To</h3>
-            <input type="text" placeholder='Eployee Name' className='rounded-md w-[575px] bg-black border-2 w-[45vw]' />
+            <input 
+            value={asignTo}
+            onChange={(e)=>{
+              setAsignTo(e.target.value);
+            }}
+            type="text" 
+            placeholder='Eployee Name' 
+            className='rounded-md w-[575px] bg-black border-2 w-[45vw]' />
           </div>
 
           <div className='p-2'>
             <h3>Category</h3>
-            <input type="text" placeholder='design, dev, etc' className='rounded-md w-[575px] bg-black border-2 w-[45vw]'/>
+            <input 
+            value={category}
+            onChange={(e)=>{
+              setCategory(e.target.value);
+            }}
+            type="text" 
+            placeholder='design, dev, etc' 
+            className='rounded-md w-[575px] bg-black border-2 w-[45vw]' />
           </div>
 
         </div>
@@ -32,7 +79,16 @@ const CreateTask = () => {
 
           <div>
             <h3>Description</h3>
-            <textarea name="" id="" cols='80' rows='10' className='rounded-md bg-black border-2 w-[45vw] ' ></textarea>
+            <textarea 
+            value={taskDescription}
+            onChange={(e)=>{
+              setTaskDescription(e.target.value);
+            }}
+            name="" 
+            id="" 
+            cols='80' 
+            rows='10' 
+            className='rounded-md bg-black border-2 w-[45vw] ' ></textarea>
           </div>
 
           <div>
@@ -40,9 +96,9 @@ const CreateTask = () => {
           </div>
 
         </div>
-        
-       </form>
-      </div>
+
+      </form>
+    </div>
   )
 }
 
