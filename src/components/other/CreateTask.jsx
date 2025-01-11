@@ -9,15 +9,7 @@ const CreateTask = () => {
   const [category, setCategory] = useState('')
 
   const [task, setTask] = useState({
-    taskTitle : 'setTaskTitle', 
-    taskDescription : setTaskDescription, 
-    taskDate : setTaskDate, 
-    category : setCategory, 
-    asignTo : setAsignTo, 
-    active: false, 
-    newTask: true, 
-    failed: true, 
-    completed: false
+     taskTitle:localStorage.data
   })
 
   const submitHandler = (e) => {
