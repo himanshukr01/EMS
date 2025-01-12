@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 const CreateTask = () => {
 
@@ -8,9 +8,7 @@ const CreateTask = () => {
   const [asignTo, setAsignTo] = useState('')
   const [category, setCategory] = useState('')
 
-  const [task, setTask] = useState({
-     taskTitle:localStorage.data
-  })
+  const [task, setTask] = useState({})
 
   const submitHandler = (e) => {
     e.preventDefault()
@@ -18,6 +16,10 @@ const CreateTask = () => {
     console.log(task);
     
   }
+
+  useEffect(() => {
+    console.log(task);
+  }, [task]);
 
   return (
     <div>
