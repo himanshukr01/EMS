@@ -8,8 +8,8 @@ const Header = (props) => {
   // else{data.firstName}
 
   const logOutUser = () => {
-    localStorage.removeItem('ems')
-    window.location.href = '/'
+    localStorage.setItem('loggedInUser', '')
+    window.location.reload()
   }
   return (
     <div className='flex itmes-end justify-between'>
