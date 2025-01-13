@@ -47,7 +47,7 @@ const CreateTask = () => {
       <form onSubmit={(e) => {
         submitHandler(e)
       }}
-        className='flex items-center justify-between w-full bg-[#1c1c1c] rounded-xl mt-9  '>
+        className='flex items-center justify-between w-[1300px] bg-[#1c1c1c] rounded-xl mt-9  '>
         <div className='p-5 '>
 
           <div className='p-2'>
